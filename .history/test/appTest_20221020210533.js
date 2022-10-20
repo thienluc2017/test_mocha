@@ -48,19 +48,4 @@ describe('Equivalence partitioning',function(){
 
 })
 
-describe('Phu bac 2',function(){
-    it('Test1',function(){
-        assert.equal(getCertificate(11.0, 2),'Không hợp lệ');
-    });
-    it('Test2',function(){
-        assert.equal(getCertificate(5.0,21.0),'Không hợp lệ');
-    });
-    it('Test3',function(){
-        assert.equal(getCertificate(5.0,12.0),'Không được giấy khen');
-    });
-    it('Test4',function(){
-        assert.equal(getCertificate(9.0,18.0),'Học sinh 5 tốt');
-    });
-   
 
-})

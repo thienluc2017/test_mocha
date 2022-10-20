@@ -50,17 +50,31 @@ describe('Equivalence partitioning',function(){
 
 describe('Phu bac 2',function(){
     it('Test1',function(){
-        assert.equal(getCertificate(11.0, 2),'Không hợp lệ');
+        assert.equal(getCertificate(11.0, 2),'Không được giấy khen');
     });
     it('Test2',function(){
-        assert.equal(getCertificate(5.0,21.0),'Không hợp lệ');
+        assert.equal(getCertificate(5.0,21.0),'Không được giấy khen');
     });
     it('Test3',function(){
-        assert.equal(getCertificate(5.0,12.0),'Không được giấy khen');
+        assert.equal(getCertificate(7.0,0.1),'Không được giấy khen');
     });
     it('Test4',function(){
-        assert.equal(getCertificate(9.0,18.0),'Học sinh 5 tốt');
+        assert.equal(getCertificate(7.0,19.9),'Không được giấy khen');
     });
-   
+    it('Test5',function(){
+        assert.equal(getCertificate(7.0,20.0),'Không được giấy khen');
+    });
+    it('Test6',function(){
+        assert.equal(getCertificate(0.0,12.0),'Không được giấy khen');
+    });
+    it('Test7',function(){
+        assert.equal(getCertificate(0.1,12.0),'Không được giấy khen');
+    });
+    it('Test8',function(){
+        assert.equal(getCertificate(9.9,12.0),'Học sinh 5 tốt');
+    });
+    it('Test9',function(){
+        assert.equal(getCertificate(10.0,12.0),'Học sinh 5 tốt');
+    });
 
 })
