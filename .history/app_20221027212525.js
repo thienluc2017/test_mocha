@@ -5,7 +5,6 @@ module.exports={
             return "Không hợp lệ";
         }
         if(score<0.0||score>20.0){
-            score=score
             return "Không hợp lệ";
         }
         if(averageScore<8.0|| score<12.0){

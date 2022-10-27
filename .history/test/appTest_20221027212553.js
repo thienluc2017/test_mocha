@@ -64,12 +64,12 @@ describe('Phu bac 2',function(){
    
 
 })
-describe('all-c-use',function(){
+describe('Phu bac 2',function(){
     it('Test1',function(){
-        assert.equal(getCertificate(-2.0,5.0),'Không hợp lệ');
+        assert.equal(getCertificate(-2.0,5),'Không hợp lệ');
     });
     it('Test2',function(){
-        assert.equal(getCertificate(5.0,25.0),'Không hợp lệ');
+        assert.equal(getCertificate(5.0,21.0),'Không hợp lệ');
     });
     
    
